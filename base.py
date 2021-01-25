@@ -20,8 +20,9 @@ Coa = "https://meet.google.com/xmo-ftmk-fzo"
 OSLab = ""
 DBMSLab = ""
 COALab = "https://meet.google.com/mjo-gdrc-fie"
-emailid = "201951147@iiitvadodara.ac.in"
-password = "#JaiHind31*"
+emailid = "" # enter your email id here
+
+password = "" # enter your password here
 duration = 3300
 day = (e.strftime("%a"))
 url = "https://meet.google.com/pkw-txgr-hsz"
@@ -54,7 +55,7 @@ def bot(url):
     "profile.default_content_setting_values.notifications": 1
     })
 
-    PATH = "/home/rayan/chromedriver"
+    PATH = "enter path of downloaded chrome webdriver" # for example : home/computer/chromewebdriver
     driver = webdriver.Chrome(options = opt , executable_path = PATH)
     driver.maximize_window()
     driver.get("https://accounts.google.com/signin/v2/identifier?ltmpl=meet&continue=https%3A%2F%2Fmeet.google.com%3Fhs%3D193&_ga=2.244384962.692424018.1610134292-271021477.1610134292&flowName=GlifWebSignIn&flowEntry=ServiceLogin")
